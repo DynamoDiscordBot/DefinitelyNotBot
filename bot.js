@@ -12,11 +12,11 @@ client.on('message', message => {
 
     const message = prefix + message.content;
 
-    if (command === 'ping') {
+    if (command === '@Dynamo#2954') {
         message.channel.send(Math.floor(client.ping));
       }
     if (command === 'bing') {
-        message.reply('BONG!');
+        message.reply('DONT FUCKING PING ME PESANT');
       }
 });
 
