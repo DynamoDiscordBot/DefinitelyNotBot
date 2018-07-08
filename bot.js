@@ -10,15 +10,15 @@ client.on('message', message => {
 
     if (message.author.bot) return;
 
-    const message = prefix + message.content;
+    var command = prefix + message.content.toLowerCase();
 
-    if (command === '@Dynamo#2954') {
+    if (command === 'ping') {
         message.channel.send(Math.floor(client.ping));
       }
     if (command === 'bing') {
-        message.reply('DONT FUCKING PING ME PESANT');
+        message.reply('BONG!');
       }
 });
 
-// THIS  has to be here do not change it
+// THIS  IS  VERY  GAY
 client.login(process.env.BOT_TOKEN);
